@@ -1,4 +1,6 @@
 ##Kayasax Powershell Stuff##
 
->some userfull script for it administration
+>some usefull script for it administration
 
+### schedule tasks
+* import & export
