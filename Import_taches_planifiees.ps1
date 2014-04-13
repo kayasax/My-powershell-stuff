@@ -8,7 +8,7 @@ $source="c:\temp\tasks" # répertoire contenant les .xml des tâches
 $taskFolder="\SMAC" # Sous dossier du planificateur
 
 # Début du programme
-$cred=Get-Credential groupe\sys-mac-smacsr -message "Indiquer le mot de passe SVP" 
+$cred=Get-Credential domain\username "Indiquer le mot de passe SVP" 
 
 # Connexion au service planificateur de tâches
 $sch = New-Object -ComObject("Schedule.Service")
