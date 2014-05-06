@@ -5,5 +5,5 @@
 ### text manipulation
 * remove empty lines from split
 
-### taskss and jobs
+### tasks and jobs
 * import & export  schedule tasks
