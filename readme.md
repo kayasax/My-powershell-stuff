@@ -2,5 +2,8 @@
 
 >some usefull script for it administration
 
-### schedule tasks
-* import & export
+### text manipulation
+* remove empty lines from split
+
+### tasks and jobs
+* import & export  schedule tasks
