@@ -13,6 +13,7 @@ Link Settings: Forced, 100 Mbit, Full Duplex
  
 #>
 
+# 1- USING SWITCH STATEMENT
 $data = (@'
 Name: ENC1
  IPv4 Address: 172.16.2.101
@@ -26,7 +27,7 @@ Name: ENC1
  Name: ENC4
  IPv4 Address: 172.16.2.104
  Link Settings: Forced, 100 Mbps, Full Duplex
-'@).split("`n") |
+'@).split("`n") |  # to get each line of a here string we must split it on new-line first !
 foreach {$_.trim()}
 
 Switch -Regex ($data) 
@@ -36,3 +37,5 @@ Switch -Regex ($data)
  '^Link Settings: (.+)' {$obj.Settings = $Matches[1]$obj}
 }
 
+# 2  -USING SELECT-STRING
+ get-content file.txt |select-string "IPv4"  ....
